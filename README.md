@@ -7,7 +7,7 @@
 
 ## 🎒 What even is an xNFT ?
 
-First of all, the "X" in xNFT stands for eXecutable. So basically an xNFT is an eXecutable NFT. But.. where can it be executed ? That's where [Backpack](https://www.backpack.app/) comes in. Backpack is a multi chain crypto wallet developed by a company named Coral founded by Armani Ferrante, the creator of the Solana Anchor Framework. It can run apps called xNFTs, and has it's own app store. That means the property right for an app is own-able as an NFT. If that didn't make sense, don't stress out, you're gonna be able to try it out yourself.
+First of all, the "X" in xNFT stands for eXecutable. So basically an xNFT is an eXecutable NFT. But.. where can it be executed ? That's where [Backpack](https://www.backpack.app/) comes in. Backpack is a multi chain crypto wallet developed by a company named Coral founded by Armani Ferrante, the creator of the Solana Anchor Framework. It can run apps called xNFTs, and has its own app store. That means the property right for an app is own-able as an NFT. If that didn't make sense, don't stress out, you're gonna be able to try it out yourself.
 
 ## 🔧 Dependencies
 
@@ -70,7 +70,7 @@ Run the command `git clone https://github.com/valentinmadrid/xnft-quickstart.git
 
 **1.3 - Test your xNFT**
 
-After installing, run `yarn` and `yarn dev` or `npm install`and `npm run dev` in the folder where the project is located. Open your Backpack Wallet again, navigate to xNFTs and click simulator. You should now be seeing your working app with a "Hello world" on the top left. Congrats, you now have a working xNFT !
+After installing, run `yarn` and `yarn dev` or `npm install` and `npm run dev` in the folder where the project is located. Open your Backpack Wallet again, navigate to xNFTs and click simulator. You should now be seeing your working app with a "Hello world" on the top left. Congrats, you now have a working xNFT !
 Let's look at how to change what is rendered, by opening App.tsx and changing
 
 ```ts
@@ -121,7 +121,7 @@ If you want to build the next unicorn startup, your product needs to look good. 
 ```
 
 Preview those changes and play around with CSS a little bit.
-If you don't like regular CSS, don't worry. We wont be using it a lot because we will use TailwindCSS later.
+If you don't like regular CSS, don't worry. We won't be using it a lot because we will use TailwindCSS later.
 
 **2. Let's start shipping**
 **2.1 - Customize your View with Components**
@@ -158,7 +158,7 @@ Do not forget to import your new components(TextInput, Button, Image) from react
 - Button: A button
 - Image: Renders an Image on the screen
 
-Now its your turn to do something, delete everything we have added to App.tsx and create an App that has a black background and that has a text wrapped by a View which has a margin of 5px, which welcomes me in the top left(with something like: "Hey there!").
+Now it's your turn to do something, delete everything we have added to App.tsx and create an App that has a black background and that has a text wrapped by a View which has a margin of 5px, which welcomes me in the top left(with something like: "Hey there!").
 My example code is the following:
 
 ```ts
@@ -205,7 +205,7 @@ Basically this is checking if there is data in the friends array, if yes it gree
 
 **2.3 - Mapping over data**
 
-As we may have multiple friends that in our address book we will have to display every friend in the friends object with their name and a button to send SOL to them. Let's look at the code:
+As we may have multiple friends in our address book we will have to display every friend in the friends object with their name and a button to send SOL to them. Let's look at the code:
 
 ```ts
 <View style={{ backgroundColor: 'black', height: '100%' }}>
@@ -315,7 +315,7 @@ Now that we have a pretty good looking static App, let's move onto making our Ap
 
 **4.1 Storing data in Localstorage**
 
-There are multiple ways of storing data locally in react-native, but we will be using the AsyncStorage package package. Install it by running `yarn add @react-native-async-storage/async-storage` or `npm install @react-native-async-storage/async-storage`.
+There are multiple ways of storing data locally in react-native, but we will be using the AsyncStorage package. Install it by running `yarn add @react-native-async-storage/async-storage` or `npm install @react-native-async-storage/async-storage`.
 Add this line to the imports in App.tsx:
 
 ```ts
@@ -347,7 +347,7 @@ Add this to your code below the friends array that we made. Then, right click yo
 **4.2 Navigation**
 
 Okay, we're gonna use a lot of boilerplate code now, you just have to understand what it does, and be able to copy paste some of the stuff whenever you need it.
-Basically there will be a Bottom Tab Navigator, which is gonna be two tabs in the bottom of the App(to navigate between tabs lol) and a Stack Navigator, to change screens while you are in one tab.
+Basically there will be a Bottom Tab Navigator, which is gonna be two tabs at the bottom of the App(to navigate between tabs lol) and a Stack Navigator, to change screens while you are in one tab.
 Let's take instagram for example, the "Home/Feed" Tab and "Search" Tab are Bottom Tab navigators. Now, when you click on a profile while sliding in your feed, the profile is opened using the Stack Navigator.
 
 First of all, import these in your App.tsx:
@@ -500,7 +500,7 @@ function App() {
 export default registerRootComponent(App);
 ```
 
-We have two screens, Home and Friends, which you can navigate using the Navigation menu at the bottom of the App. When on the HomeScreen, you see the inital route of the HomeScreen Stack Navigator, which is our Main Page. When you click on the Friends Tab, you will see an empty screen, that we will fill out out in the next step. Take a second to look at the code and understand it. If you do not understand it, search up some docs or a tutorial for navigation in react native.
+We have two screens, Home and Friends, which you can navigate using the Navigation menu at the bottom of the App. When on the HomeScreen, you see the initial route of the HomeScreen Stack Navigator, which is our Main Page. When you click on the Friends Tab, you will see an empty screen, that we will fill out in the next step. Take a second to look at the code and understand it. If you do not understand it, search up some docs or a tutorial for navigation in react native.
 
 **5. Hooks and signing transactions**
 
